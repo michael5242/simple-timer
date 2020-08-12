@@ -1,0 +1,27 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+/* Colors */
+:root {
+    --background-left-color: #333d79;
+    --background-right-color: #faebef;
+    --text-color: #faebef;
+    --secondary-text-color: #faebef;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body,
+button,
+input {
+    font-family: "Lato", sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}

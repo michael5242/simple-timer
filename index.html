@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clock</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/leftside.css">
+    <link rel="stylesheet" href="css/rightside.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-half">
+            <div class="left-half-input">
+                <p id="time-placeholder">00:00:00</p>
+                <input id="time-input" type="text" value=""></input>
+            </div>
+            <ul class="left-half-buttons">
+                <li><button id="time-startstop-button" class="time-button">START</button></li>
+                <li><button id="time-reset-button" class="time-button">RESET</button></li>
+            </ul>
+        </div>
+        <div class="right-half">
+            <div class="form-container">
+                <form>
+                    <input type="text" class="todo-input">
+                    <button class="todo-button" type="submit">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </button>
+                    <div class="select">
+                        <select name="todos" class="filter-todo">
+                            <option value="all">All</option>
+                            <option value="completed">Completed</option>
+                            <option value="uncompleted">Uncompleted</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+        </div>
+    </div id="container">
+    <script src="/js/leftside.js"></script>
+    <script src="/js/rightside.js"></script>
+</body>
+
+</html>
