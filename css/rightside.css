@@ -4,6 +4,7 @@
 /* Right half */
 .right-half {
   background-color: var(--background-right-color);
+  padding: 16px 0px;
   width: 50%;
   display: flex;
   flex-direction: column;
